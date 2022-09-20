@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Item Name | Documentation by Author Name</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#mode').addEventListener('click',()=>{
+                document.querySelector('html').classList.toggle('dark');
+            })
+        });
+
+
+    </script>
+
+    <div id="wrapper">
+
+        <div id="mode" >
+            <div class="dark">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>lightmode</title>
+                    <path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+                </svg>
+            </div>
+            <div class="light">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>darkmode</title>
+                    <path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading banner">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center ">
+                            <h1 class="title">Token Now WHite Paper</h1>
+                        </div><br/>
+                        <div class="text-center">
+                            <p style="color: white;">In our Whitepaper, you will find all the information about Token Now, its Decentralized Application, and its utility token now.</p>
+                        </div>
+                        <div class="btnwrapper">
+                            <button class="btn btn-lg downloadbtn">Download pdf</button>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#line1">Abstract</a></li>
+                            <li><a href="#line2">Our Values</a></li>
+                            <li><a href="#line3">Introduction</a></li>
+                            <li><a href="#line4">Purpose</a>
+                                <ul class="nav">
+                                    <li><a href="#line4_1">The opportunity</a></li>
+                                    <li><a href="#line4_2">The problem</a></li>
+                                    <li><a href="#line4_3">The token economy</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="#line5">Opportunity of Tokenization</a></li>
+                            <li><a href="#line6">Ideal tokenization process</a>
+                                <ul class="nav">
+                                    <li><a href="#line6_1">Security Token Offering (STO)</a></li>
+                                    <li><a href="#line6_2">The DAO revolution</a></li>
+                                    <li><a href="#line6_3">Innovation</a></li>
+                                </ul>
+                            
+                            </li>
+                            <li><a href="#line7">The ecosystem</a>
+                                <ul class="nav">
+                                    <li><a href="#line7_1">Security token offerings</a></li>
+                                    <li><a href="#line7_2">Security token smart contracts</a></li>
+                                    <li><a href="#line7_3">The TN utility token</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line8">The STO factory</a>
+                                <ul class="nav">
+                                    <li><a href="#line8_1">Bringing companies on-chain</a></li>
+                                    <li><a href="#line8_2">Utility tokens</a></li>
+                                </ul></li>
+                            <li><a href="#line9">The Decentralized Management Solution</a>
+                                <ul class="nav">
+                                    <li><a href="#line9_1">Capitalization table management</a></li>
+                                    <li><a href="#line8_2">Manage your capitalization table on-chain</a></li>
+                                    <li><a href="#line8_3">Monitor token holders profiles and transaction</a></li>
+                                    <li><a href="#line8_4">Whitelabel dApp for tokenized companies</a></li>
+                                    <li><a href="#line8_5">Features applicable to DAOs</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line10">Tokenization</a></li>
+                            <li><a href="#line11">Architecture</a></li>
+                            <li><a href="#line12">Additional challenges</a></li>
+                            <li><a href="#line13">The dApp and TN</a>
+                                <ul class="nav">
+                                    <li><a href="#line13_1">Overview</a></li>
+                                    <li><a href="#line13_2">Features for Issuers</a></li>
+                                    <li><a href="#line13_3">Features for Investors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line14">Tokenization Process</a>
+                                <ul class="nav">
+                                    <li><a href="#line14_1">Monetization</a></li>
+                                    <li><a href="#line14_2">B2B – Issuers</a></li>
+                                    <li><a href="#line14_3">B2C – Investors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line15">Token Economy</a>
+                                <ul class="nav">
+                                    <li><a href="#line15_1">Initial Coin Distribution</a></li>
+                                    <li><a href="#line15_2">Social and DAO</a></li>
+                                    <li><a href="#line15_3">Allocation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line16">Team</a>
+                                <ul class="nav">
+                                    <li><a href="#line16_1">The Token Now Team</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line17">References</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Abstract<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>A cryptocurrency is a digital asset designed as an alternative medium-of-exchange and store-of-value that uses cryptography to secure transactions, to control the creation of additional units, and to verify the transfer of assets and value. <br/>
+                                    Cryptocurrencies are predominantly decentralized in nature. Transactions are validated by network nodes and recorded in a public data structure in the form of a distributed ledger commonly known as a Blockchain.<br/>
+                                    The first and most common cryptocurrency created was Bitcoin. Bitcoin was created in 2008 in the aftermath of the global subprime financial crisis of 2007 [1], by an anonymous person (or group) called Satoshi Nakamoto [2]. The inevitable failure of subprime lending markets caused the cataclysmic failure of global financial systems. This catalyst created the perfect storm where digital assets would thrive.<br/>
+                                    The core purpose behind the technology was to create a censorship-resistant, decentralized process of transferring value which is recorded on an immutable, distributed ledger to take back custody of one’s finances, removing the reliance on intermediaries such as depository and central banks (the same institutions that were ultimately responsible for the collapse of the global financial system, whose effects are still felt around the world today).<br/>
+                                    Over the last 13 years, the Cryptoverse has grown exponentially. Mass adoption of Blockchain technology seems continually more inevitable with the aggressive pace of innovation, mammoth increase in real-world application, increased accessibility, and over a decade of battle-testing.<br/>
+                                    Today there are thousands of cryptocurrencies in existence. The second most prominent is Ethereum. Ethereum pioneered the next stage in the evolution of the Cryptoverse, successfully implementing the ‘Smart Contract’ on its native Blockchain. Smart contracts were first proposed in 1996 by computer scientist Nick Szabo, famous for inventing a virtual currency a full decade before the invention of Bitcoin. In his original essay published in 1996 named “Smart Contracts: Building Blocks for Digital Markets” [3] Szabo described a Smart Contract as “a set of promises, specified in digital form, including protocols within which the parties perform on these promises.” Since then, Smart Contracts became known as one of the most crucial computer systems innovations in existence. For his contributions to the field, Szabo is recognized as the Father of Smart Contracts.<br/>
+                                    Smart contracts reinvented what we perceived to be the theoretical limit of cryptography, subsequently revolutionizing Blockchain technology.<br/>
+                                    Token Now seeks to further optimize smart-contract functionality and be part of the evolution, driven by its core principles such as solving the real-world issue of accessibility to illiquid markets for individuals and businesses from any walk of life.<br/>
+                                    Token Now’s vision is twofold. Firstly, Token Now aims to create a decentralized management system where developmental real estate is not booked by the selected few, but the masses in
+                                    general. Our vision is to provide users a DAO platform that tokenizes assets to make it accessible for everyone to invest and trade.<br/>
+                                    Token Now intends to issue its native utility token (“TN”) through an Initial Coin Offering (ICO) on a decentralized exchange, and later launch a liquidity pool on Pancakeswap to boost its dApp capabilities. The aim is to provide decentralized tokenization services to our community. This paper is designed to experiment with new and innovative ideas, by combining features implemented in smart contracts and other configurations at the protocol level that will be designed by Token Now’s engineering team to help us reach our objectives.<br/>
+                                    Token Now’s decentralized application (dApp), will be the first of its kind, as the aim is to standardize the process by which asset tokenization and tokenization services across the globe are executed.<br/>
+                                </p>
+
+                                <h4>Disclaimer</h4>                                    
+                                <p>This document is for educational and experimental purposes only.<br/>
+                                    This document is provided by the Token Now team and does not in any way represent technical, legal, compliance, regulatory, financial or investment advice.<br/>
+                                    Due to various risks and uncertainties, including but not limited to, technological developments and industry conditions, the actual performance and development of items described herein may differ materially from those reflected or contemplated herein.<br/>
+                                    Token Now does not accept any obligation to provide recipients with any additional information, or to update, expand, revise and/or amend the information herein, or to correct any inaccuracies which may become apparent. Although all information and views expressed herein are provided in good faith, estimates and assumptions made by Token Now’s team, make no representation or warranty (expressed or implied) as to the accuracy or completeness of the information herein, and no assurance is provided that actual results will be consistent with the descriptions and projections herein.<br/>
+                                    This document is not a prospectus and does not constitute or form any part of any offer or invitation to subscribe for, underwrite or purchase the “TN” utility token or, nor shall it form the basis of, or be relied upon, in any way, in connection with any decision relating to the utility token “TN” issued by Token Now.<br/>
+                                    The “TN” utility token is needed to be able to use the decentralized application (dApp) as this document explains. The sale and transfer of the “TN” utility tokens will be performed by Token Now. No person is bound to enter any contract or binding legal commitment in relation to the sale and purchase of the “TN” utility tokens. Any agreement between the token provider and an investor/s in relation to the sale and purchase of “TN” utility tokens is to be governed solely by a separate set of documents setting out the terms and conditions of such agreement.<br/>
+                                    In the event of any inconsistencies between what is established in this whitepaper, and the terms and conditions of the purchase and sale of “TN”, the terms and conditions of the relevant purchase and sale agreement shall supersede the whitepaper. Token Now reserves the right to decline the sale of TN during its private placement of utility tokens to any individual or business in the event of a breach of its core principles.<br/>
+                                    Regulatory authorities have not examined the information included in this paper; thus, no approval has been granted toward the information set out in this whitepaper in any jurisdiction.<br/>
+                                    Advances in innovation related to quantum computing and smart contract exploitation may present risks to Token Now.<br/>
+                                    There is no guarantee that Token Now will deliver on the content established in this document or achieve its objectives. Token Now’s proposed decentralized application (dApp) running on the Binance Smart Chain may fail, be abandoned, or be delayed for several reasons, including but not limited to lack of funding, lack of commercial success and other external factors.
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Our Values<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <hr>
+                        <h4>1-Autonomy</h4>
+                        <p>Token Now’s dApp provides the technical infrastructure for companies to operate in a Web3 environment and create their STOs as form of funding. It allows any individual from any walk of life to move from ambition to action and succeed in realizing their investment vision.</p>
+                        <h4>2-Simplicity</h4>
+                        <p>Token Now’s dApp is being built with emphasis on simplicity, to make the tokenization process as simple and accessible as possible.</p>
+                        <h4>3-Compliance</h4>
+                        <p>Token Now’s dApp will help companies transform their assets such as shares into tokens, and issue their own STOs as per the applicable legislation in their host State, whilst complying with the local regulation regarding issuance of securities and asset management. The same infrastructure will provide DAOs with the needed tools to operate and be managed.</p>
+                        <h4>4-Democracy</h4>
+                        <p>Token Now’s dApp paves the way to open illiquid markets to the world, creating a solution to democratize fundraising and bridge the gap between legacy finance, retail investing and the decentralized Cryptoverse resulting in new investment opportunities.</p>
+
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Introduction<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                        <p>Token Now was founded in April 2022, and quickly became a leading voice in the world of tokenization for its revolutionary use of blockchain technology for the tokenization of real assets.<br/>
+                            Asset tokenization is the process by which any asset, tangible or intangible, is divided into smaller pieces that take the form of tokens. Each token represents a proportional part of the asset, offering the owner of the token, the corresponding rights provided by the issuer.<br/>
+                            The tokenization market is booming and has established itself as a real alternative for individuals and businesses looking to raise financing. Historically, investors are used to a traditional marketplace in which there is almost zero tolerance for small to medium sized investors when it comes to illiquid assets. This is a marketplace where institutional money rules.<br/>
+                            In addition to the tokenization market, there is a complementary market aimed at the development of circular economies, in which more and more companies, both public and private, want to use asset tokenization tools to contribute to their fight for sustainability, utilizing native tokens as a direct communication channel, enabling holders to engage in the governance of the protocol by voting, rewarding positivity and interacting as member of a community.<br/>
+                            The Token Now team realized that this new paradigm was not just providing a tokenization solution. We will be providing a fully decentralized management system that will allow businesses to operate on chain (Web3), through entities born natively in the blockchain (DAOs), or through a combination of both (Web2-Web3), as the user finds it fit. Businesses will be capable of total customization ofl their presence and decision making in the blockchain.<br/>
+                            This whitepaper explains what Token Now is and where it is going, as the sole reason for its pivoting from a centralized to a decentralized operating model is to create an ecosystem where different economic agents coexist, using tokenization as the foundation and its utility token, the “TN” the epicenter and fuel for boosting this new reality.<br/>
+                            Let us begin by discussing the different types of tokens and forms of issuance.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>The different tokens</h4>
+                        <p>Generally, there are three types of tokens, each with their own specific use case and legal framework. Depending on how liquid the technology is, a specific token can sometimes have additional utility, and in some cases, have hybrid characteristics where it performs two or more functions.</p>
+                        </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                                <!-- table here -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">UTILITY TOKEN</th>
+                                        <th scope="col">SECURITY TOKEN</th>
+                                        <th scope="col">PAYMENT TOKEN</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">DESCRIPTION</th>
+                                        <td>A token that can be exchanged for products and services.</td>
+                                        <td>A security token is a digital representation of a traditional security. Such as an ownership position in a company, bonds, and/or other ownership rights.</td>
+                                        <td>Used as an alternative medium of exchange.</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">REGULATION</th>
+                                        <td>In most countries, host state regulation is applied. This is on the basis that it is used to exchange for goods and services.</td>
+                                        <td>AML and Securities Legislation binds from the country where the issuance of securities is applied/created.</td>
+                                        <td>Dependent on whether the token is used as legal tender.</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">KYC REQUIRED</th>
+                                        <td>Currently not required, but it is foreseen.</td>
+                                        <td>Imperative.</td>
+                                        <td>Not required.</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">TO PURCHASE</th>
+                                        <td>to be changed.</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">SECONDARY MARKET</th>
+                                        <td>Possibility of being exchanged in unregulated secondary markets, or in exchanges and markets with specific licenses.</td>
+                                        <td>Security laws are applied, thus constraints as to how it can be exchanged in secondary markets.</td>
+                                        <td>Possibility of being exchanged in a utility or security token secondary market.</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">ISSUANCE FORM</th>
+                                        <td>ICO/IEO/IDO.</td>
+                                        <td>STO.</td>
+                                        <td>Dependent on genesis. Whether issued, as a utility or security token.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                            <h2>The Issuances</h2>
+                            <h4>Utility tokens</h4>
+                            <p>This section focuses on the issuance of utility and security tokens, which differ in how they are issued, due to underlying regulatory and legal requirements.<br/>
+                            <b>A utility token provides access to a blockchain protocol, dApp, and/or can be exchanged for another type of product or service.</b>These methodologies can differ depending on the accessibility to the public.
+                            </p> 
+                            <h4>Initial Coin Offering (ICO)</h4>
+                            <p>An initial coin offering (ICO) [4] is the cryptocurrency industry’s equivalent to an initial public offering (IPO). Where the purchase and sale of tokens is completed directly between issuer and buyer. A company looking to raise money to create a new coin, app, or service launches an ICO as a way to raise funds. Interested investors can buy into the offering and receive a new cryptocurrency token issued by the company. This token may have some utility in using the product or service the company is offering, or it may just represent a stake in the company or project.</p>
+                            <ul style="list-style-type:disc">
+                                <li>ICOs also retain at least two important structural differences from IPOs. First, ICOs are largely unregulated, meaning that government organizations like the Securities and Exchange Commission (SEC)[5] do not oversee them. Secondly, due to their decentralization and lack of regulation, ICOs are much freer in terms of structure than IPOs.</li>
+                                <li>ICOs can be structured in a variety of ways. In some cases, a company sets a specific goal or limit for its funding, which means that each token sold in the ICO has a pre-set price and that the total token supply is static. In other cases, there is a static supply of ICO tokens but a dynamic funding goal—this means that the distribution of tokens to investors will be dependent upon the funds received (i.e. the more total funds received in the ICO, the higher the overall token price).</li>
+                                <li>Still, others have a dynamic token supply which is determined according to the amount of funding received. In these cases, the price of a token is static, but there is no limit to the number of total tokens (save for parameters like ICO length).</li>
+                            </ul>
+                            <h4>Initial Exchange Offering (IEO)</h4>
+                            <p>When issued via a centralized exchange, which places the tokens for sale for buyers to acquire, this is known as an Initial Exchange Offering (IEO). IEOs are a recent development in the rapidly evolving digital asset space. IEOs are similar to ICOs in that they are initial offerings of digital assets (e.g., coins or tokens) to raise capital. However, IEOs are touted as an innovation on ICOs because they are offered directly by online trading platforms on behalf of companies—usually for a fee—to provide immediate trading opportunities for digital assets.</p>
+                            <h4>Initial Dex Offering (IDO)</h4>
+                            <p>If the public issuance is created through a decentralized exchange, the issuer has no control on the result of the issuance, this is therefore classified as an Initial Dex (decentralized exchange) Offering (IDO).</p>
+                            <ul style="list-style-type:disc">
+                            <li>An IDO is a new type of decentralized and permissionless Initial Coin Offering, which opens up a new method of fundraising in the Cryptoverse.</li>
+                            <li>This type of decentralized asset depends on liquidity pools where traders and investors can swap tokens such as USDC/ETH and USDC/TN.</li>
+                            <li>IDOs are generally referred to as the successor to other funding models (above). Offering better liquidity at all price levels due to its mechanics.</li>
+                            <li>Unlike other fundraising methods, IDOs are generally considered a fair way to launch a project by avoiding issues such as pre-mines, which is an issuance system that favors project founders and community members.</li>
+                            </ul>
+                            <h4>Security tokens</h4>
+                            <p>Before understanding what a security token is, we must first understand the characteristics of a traditional security. A security token is a representation of a security, which is a fungible, negotiable financial instrument that holds characteristics such as monetary value.</p>
+                            <p>There are primarily three types of securities:</p>
+                            <ul style="list-style-type:number">
+                                <li>An equity security represents ownership held by shareholders in a legal entity (a company, partnership, or trust), realized in the form of share capital, which includes shares of both common and preferred stock.</li>
+                                <li>A debt security represents borrowed money that must be repaid. Characteristics are size, yield (interest rate), maturity and renewal (redemption) date.</li>
+                                <li>Hybrid securities, combine characteristics of both debt and equity securities, e.g., equity warrants, convertible bonds, among others.</li>
+                            </ul>
+                            <p>Securities have been in existence for hundreds of years, for example the first company ever incorporated was Kongo Gumi in Japan, in the year 578. Nonetheless, innovation and optimization in the last century has made it possible for the transfer of securities to evolve, going from a pure paper format, to a digital one, making it now even possible to issue securities on-chain.</p>
+                            <p><b>A Security Token Offering is issued to the public, and since it is a form of representation of securities, it must be compliant with the regulatory and legal framework of securities in the jurisdiction in which they are issued.</b>
+                                For instance, this means that if a company is issuing security tokens in Germany, the issuance will have to comply with the same legislation as the issuance of traditional securities in Germany. This complicates matters as not all countries have a homogeneous regulatory framework.<br/>
+                                Ultimately, STOs follow the same guidelines as the issuance of any security, and this makes the issuance of this type of tokens incredibly cumbersome, heavily regulated, with high barriers to entry due to the know-how needed to perform them from a regulatory, legislation and technological perspective. Nevertheless, STOs offer unique characteristics similar to traditional capital markets.<br/>
+                                The added benefit of using blockchain technology for asset tokenization, is that it also retains the characteristics of the native blockchain. These include immutability, transparency, auditability, and traceability in a network which is live 24 hours a day, 7 days a week, 365 days a year.<br/>
+                                Generally speaking, a token is basically the representation of something else; every token represents a proportional part of a digitized asset. This also means that the owner of the token possesses the associated ownership rights and/or other types of economic rights established by the individual company performing the asset tokenization.<br/>
+                                The procedure which determines whether an issuance meets the requirements of securities law generally refers to the SEC’s (Securities & Exchange Commission) Howey Test [6]. Whilst the Howey analysis is specific to US legislation, it is a globally recognized standard for determining whether a transaction qualifies as an investment contract. A consequence of qualifying as a security, means that the underlying asset must to adhere to the Securities Act of 1933 [7] and the Securities Exchange Act of 1934 [8] (if you were an asset domiciled in the US). Under the Howey Test, an investment contract exists if there is an
+                                <span><i>"investment of money in a common enterprise with a reasonable expectation of profits to be derived from the efforts of others"</i></span>
+                            </p>
+                            <p>In summary:</p>
+                            <ul style="list-style-type:number">
+                            <li>An investment of money.</li>
+                            <li>In a common enterprise.</li>
+                            <li>With the expectation of profit.</li>
+                            <li>To be derived from the efforts of others.</li>
+                            </ul>
+                            <p><b>Token Now intends to provide the platform that will allow individuals and businesses to facilitate STO’s whilst being able to comply with local laws and regulations in the jurisdiction where the underlying asset is domiciled.</b>An individual or business will have to comply with said regulations in order to use the platform.</p>
+                        </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Purpose<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Token Now’s original vision was that we would ‘tokenize the world’. We quickly realized we were approaching the accessibility of illiquid markets from the wrong perspective.<br/>
+                                    “Token now’s decentralized technology provides the platform and tools needed for the assets of the world to tokenize themselves“.<br/>
+                                    This whitepaper is Token Now’s declaration to create an ecosystem full of opportunities, where endless investments are accessible to everyone with minimal capital expenditure and fractional ownership.<br/>
+                                    Our innovation is not limited to the robustness of blockchain technology, but also the underlying legal engineering which governs how the dApp performs.
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <h2 id="line4_1">The Opportunity</h2>
+                                <p>The reason Token Now exists is to bridge the barriers to entry one must overcome when facing the real-world issue of tokenizing assets. We intend to remove the issues of friction,
+                                intermediaries, and general barriers to entry. We hope individuals and businesses can rely on STOs as an alternative financing scheme, and investors can engage in tokenization to obtain returns. Furthermore, we want to provide tokenized companies, and the ones managing tokenizing assets, a decentralized management platform which can help them operate in the reality which is Web3.
+                                </p>
+                                <h2 id="line4_2">The Problem</h2>
+                                <p>In addition to the incumbent regulation associated with Securities, as a retail investor/businesses perspective, several inefficiencies can be improved:</p>
+                                <ul  style="list-style-type:number">
+                                <li>The average investor usually transfers his/her savings to an intermediary (asset manager, broker, etc.) who will advise and/or arrange investments. The investor’s portfolio is subject to bias and thus may invest in a portfolio which may not be appropriate.</li>
+                                <li>Investing in traditional equity markets is a complex process where a limited group of experts dominate the market, making it extremely risky for retail investors. Retail investors generally have access to markets provided you reside in a developed economy which allows market access.</li>
+                                <li>Other illiquid asset classes such as real estate, renewable energy, transportation & infrastructure, hospitality, fine wine and art, and early-stage technology investing are not easily accessible to retail investors and small businesses without having the nominal value of the underlying asset ready to deploy.</li>
+                                <li>These types of markets are rigid and illiquid: one buyer, one seller.</li>
+                                <li>Investors who keep their savings in bank accounts typically see the value of their savings diminished due to aggressive monetary policies and inflation, which results in large scale devaluation and debasement of currencies due to widespread, unhindered monetary stimulus. The combination of these factors equates to lower purchase power of the currencies over time. Furthermore, deposits stored in bank accounts currently provide close to 0% interest in most developed countries and in many, negative interest. In addition to this, banking fees and inflation erode bank deposits over time.</li>
+                                <li>Decision making, governance, and communication channels in non-digital entities generate inefficiencies that lead to losses due to higher costs derived from physical presence, storage, mail delivery, etc. All these expenses are avoided through digitalization.</li>
+                                </ul>
+                                <h2 id="line4_3">The Token Economy</h2>
+                                <p>According to Deloitte[9], tokenization could make the financial industry more accessible, cheaper, faster, and easier, thereby possibly unlocking trillions of euros in currently illiquid assets, and vastly increasing market liquidity and depth.</p>
+                                <p>These assets are only available to specialized investors; a situation that leaves extraordinarily little room for retail investors to access these markets. In other words, investors are only left with the possibility of investing in equity and/or debt markets or cryptocurrency (which carries higher volatility and risks).</p>
+                                <p>Real estate is one of the leading examples of a highly illiquid market, with high barriers of entry. A solution to this problem comes in the form of asset tokenization which provides diverse investing opportunities due to reducing barriers to entry and providing liquidity to asset owners. If we consider the European commercial real estate market alone has an estimated total valuation in the region of over 6,500bn and an estimated annual investment of 15bn.</p>
+                                <p>In addition to this, globally, we are seeing the early stages of mass adoption of crypto assets and cryptocurrencies generally;</p>
+                                <ul style="list-style-type:disc">
+                                <li>Central banks (Fed, ECB, BIS) are discussing the implementation of Central Banks of Digital Currencies (“CBDCs”).</li>
+                                <li>Retail banks adopting blockchain based solutions.</li>
+                                <li>US Treasury to allow blockchain, stablecoins for bank payments.</li>
+                                <li>Online finance and investment platforms are thriving:
+                                    <ul style="list-style-type:circle">
+                                    <li>Robinhood has experienced a growth in users from 1 million in 2016 to 14 million in 2020; did a succesful IPO with a market cap today of over $40B.</li>
+                                    <li>Coinbase did a successful IPO with a market cap today of over $50 billion USD.</li>
+                                    <li>The crypto exchange Binance has a daily trading volume of above $500 million per day.</li>
+                                    <li>US crypto exchange Coinbase successfully IPO’d this year.</li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                <p>Security Token Offerings and general asset tokenization is a disruptive technology since it provides a bilateral solution for retail investors and asset owners. Its adoption is well underway as a new form of financing, creating new alternative, untapped sources of return.</p>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The opportunity of Tokenization <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>The possibilities of asset tokenization are endless. Any asset can be digitized and divided into smaller parts, from physical assets such as real estate, to financial instruments such as debt, equity, bonds, securities, among others.<br/>
+                                    This allows different business models to be created on top of the tokenization layer, where there is direct communication between the issuer and the investor.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                  <tr>
+                                    <th scope="col">FINANCING</th>
+                                    <th scope="col">PROFITABILITY</th>
+                                    <th scope="col">LOYALTY</th>
+                                    <th scope="col">CO-OWNERSHIP</th>
+                                    <th scope="col">GOVERNANCE</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Obtaing financing from token holders by providing them  capital  gains in the form of interests or dividends.</th>
+                                    <td>Token holders obtain the profitability associated with the exploitation of the tokenized asset they have invested in.</td>
+                                    <td>Incentivizing user loyalty and possibility of adding a gamification layer (exchangeable tokens for products, discounts, etc.).</td>
+                                    <td>Partial ownership of an asset that gives the right to use it, in coordination with the rest of the co-owners.</td>
+                                    <td>New governance models can be created to incentivize community building behind the tokenized company or asset, which can trigger further investments by the token holders, or returns in case they use the product or service tokenized.</td>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                  <tr>
+                                    <th scope="col">SECONDARY MARKET</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Token holders can exchange their tokens for other tokens, and thus
+                                        have freedom over when/how they want to transact: tokens can be
+                                        exchanged on a peer-to-peer basis and on secondary markets.</th>
+                                </tr>
+                                </tbody>
+                              </table>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                            <p>According to the World Economic Forum, by 2022 60% of global GDP will be made up of digitized assets10, encompassing a total value of $10 trillion (we believe a conservative estimation). The asset tokenization market was valued at $1.25 billion in 2019, and is forecast to reach $5.70 billion in 2027, growing at a compound annual growth rate (“CAGR”) of 22.54% from 2020 to 2027.<br/>
+                                Asset tokenization is one of the main emerging trends in the financial industry and is expected to achieve sustainable growth in the near future. While traditional commodity and asset trading businesses have faced a downturn, asset tokenization, coupled with blockchain technology, is completely revolutionizing the financial industry. At Token Now, we believe that asset tokenization is an opportunity that is here to stay, and there is no better time to participate in this disruptive market.<br/>
+                                One of the main factors driving the rise of the tokenization industry is the growing need to grant access to a growing audience of investors with new forms of investment. Both the technical progress in asset tokenization software, and the increasing demand in developing countries, are expected to result in higher growth opportunities for the industry in the coming years. For instance, an untapped area for development is to automate various asset management processes with the aim of improving liquidity and optimizing risk management through tokenization.<br/>
+                                Currently, North America contributes the most value to the asset tokenization market (35% in 2018), followed by Europe (24%; where the regions of Germany, France, United Kingdom, Russia, and Italy stand out, respectively) and the Asian-Pacific (20%).<br/>
+                            </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The ideal tokenization process <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>The applications of asset tokenization are endless and can be applied to a wide variety of assets, from real estate to valuable art collections, as well as intangible assets. The most important tokenization classes are explained in the following table.</p>
+                            </div>
+                            <!-- end col -->
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h3 class="dark-text" id="line6_1"> Security Token Offering (STO)</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">REAL ESTATE</th>
+                                        <th scope="col">COLLECTIBLE</th>
+                                        <th scope="col">LITIGATION</th>
+                                        <th scope="col">SECURITIES</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td scope="row">A tokenized property is divided into tokens. Each token represents a proportion al part of the asset, which can be transferred at any time.</td>
+                                        <td>By tokenizing works of art, a work of art’s unique identity is created, history recorded, and prominence authenticated. New value can be created, exploring fundraising models and distribution of ownership.</td>
+                                        <td>Litigation can be tokenized. Token holders can invest in the outcome of a trial, and thus generate returns depending on the outcome. By diversifying the risk, the chances for pursuing litigation are increased,and the pursuit for justice becomes more accessible.</td>
+                                        <td>@Security tokens can take many different forms. This will include the scope of rights that are offered to token holders. Debt, equity, and bonds merely scratch the surface when it comes to what is, asset tokenization.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="col-md-12">
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">GOODS</th>
+                                        <th scope="col">INVESTMENT FUNDS</th>
+                                        <th scope="col">COMPANIES</th>
+                                        <th scope="col">NON-GOVERNMENT ORGANIZATION</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>By tokenizing raw materials, you can provide access to a wider range of people from around the world, thereby generating greater wealth. If market activity increases, it means more liquidity and market depth. Plus, the ability to track and trace goods geographically and their fundamental properties such as grade, quality etc.</td>
+                                        <td>The tokenization of hedge fund operations opens the door to investors and gives small and medium-sized businesses the potential to see the benefits of a well-balanced, diversified, and profitable portfolio, designed by professional fund managers.</td>
+                                        <td>A company can have its share capital tokenized. Making the governance of the company more liquid and transparent, and the possibility of transferring. Decision making processes can now be performed in a fully digitized procedure, where token holders can vote on a pro-rata basis relative to their holding (governance).</td>
+                                        <td>Users from anywhere in the world can buy tokens associated with an NGO or charitable organization. Tokens could provide the means to be included in the governance of the protocol voting on important decisions. Never before have donors had the ability to govern, track and trace funds.</td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    This wide range of tokenization possibilities provides investors with a extended selection of investment options at affordable costs, with variable investment returns that allow them the ability to evaluate the option that best suits their desired risk and returns profiles, without the availability of capital being an obstacle in the decision-making process. In other words,<b>tokenization enables maximum diversification across asset classes in a way that is currently not possible for retail investors and small businesses.</b>
+                                    <br/>Retail investors can now decide how to build their portfolio of digital assets. This degree of diversification translates to a more robust portfolio and where capital can be allocated to as many projects as the investor wishes without capital constraints.<br/>
+                                    For instance, large funds can diversify their portfolios, allocating a certain amount of capital, typically millions, to art or real estate (it is well known that art is uncorrelated to traditional equity markets). However, a retail investor is currently unable to allocate minimal capital to art; with asset tokenization, a retail investor could invest as little as 100 Euros in art if desired.<br/>The correct use of technology can improve the efficiency of investing, by focusing on the customer’s journey, providing real-time information, verifiable, immutable, and transparent transactions, such as profit and loss, marking-to-market, and transaction history.<br/>
+                                    Another key advantage of digital assets that we wish to highlight is the simplicity with which they can be transferred from one portfolio to another, and from one user to another. This results in optimal liquidity, as you can buy and sell assets from user- to-user (peer-to-peer) simply by taking advantage of digital platforms that connect users and execute transference in seconds, at minimal/marginal costs and without the need for intermediaries.
+                            </p>
+                        </div>
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3 class="dark-text" id="line6_2"> The DAO revolution</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>As the concept of Web3 continues to evolve, so do the structures that are created natively in the blockchain. The evolution of technology has brought parallelly the evolution of the psychological conception as to what decentralization entails, and what does autonomy as a right mean.<br>
+                                In this
+                                sense, the Decentralized Autonomous Organizations or DAOs started becoming a reality, where its participants are considered as equals, combined under a similar vision and all connected via a token, and a digitized form of communication.<br/>
+                                One of the main aspects of these new forms of organizations is their ability to exist away from a structurized company format as it is established that they have characteristics that go against their founding pillars, such as the ability to perform haste transactions, lean operations, providing a full digital governance participation to its stakeholders, among others, pillars which in fact come from a digital experience, not from the structure itself. While the essence of DAOs is to consider them shapeless or structureless, they do entail legal implications which are not always considered.<br/>
+                                Companies have different shapes and names, which correspond to the jurisdiction in which they are incorporated. For the purpose of this explanation, let’s consider for the time being the companies which are incorporated under a limited liability structure. The main reason for incorporating a limited liability company is to provide funds to the new organism being created by its shareholders, who want to limit their liability and protect the rest of their personal assets. The concept behind it is very simple; once a limited liability company is incorporated, it is considered a new legal entity denominated legal person, which becomes unique and separated from all other legal or natural persons, even from the ones acting as its shareholders.<br/>
+                                While the DAO movement seeks to empower its stakeholders by providing them leaner mechanisms of participation, it does so at the legal expense of making them participate in structures that in many cases do not comply with applicable legislations, or puts them at risk of having to answer with their personal assets as their liability is not limited. Furthermore, characteristics <br/>
+                                that enable the economic agents to operate and interact, such as having VAT numbers or be registered before a Social Security administration in order to hire employees, are not available to DAOs, limiting their ability of interaction and operation.<br/>
+                                While the DAOs are destined to become a reality, and more assets become managed by this infrastructure to them via its dApp, in order to mix the ecosystem of tokenized companies operating in Web3, and organizations natively being created on-chain
+                            </p>
+                        </div>
+                                                <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3 class="dark-text" id="line6_3">Innovation</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                Token Now is developing the first ever dApp to service and support STOs, together with a smart contract protocol.<br/>
+                                In our opinion, true democracy and decentralization can only be achieved with the use of blockchain technology. By being able to provide a product that combines these two instruments natively, Token Now will be able to fulfil its vision of providing the resources needed to allow the world to tokenize itself, since issuers of security tokens can create their own self-sustained and self-executed ecosystems, without the mediation of Token Now or third parties.<br/>
+                                Furthermore, to achieve the level of democracy that is fundamentally a core value for Token Now, this requires that Token Now is fully transparent. Therefore, the development code will be stored in a public, open-source repository in Github.<br/>
+                                This will allow the code to be audited and verified by third parties and will also encourage the community of users behind Token Now to help improve the code itself.<br/>
+                                Finally, creating a public repository for the source code will allow Token Now to offer an open API, so third parties can use our smart contracts and back end for integration in any application or website, without the need to be dependent on the dApp’s front end, and further allowing new workflows and business models to be created without Token Now acting as an intermediary.<br/>
+                                In a broad sense, Token Now’s dApp will facilitate the following:<br/>
+                                <ul style="list-style-type: disc;">
+                                <li>
+                                    Will allow users to register with emails, recovering lost passwords and logging into the dashboards.
+                                </li>
+                                <li>Will allow users to buy TN, Token Now’s utility token.</li>
+                                <li>Will allow users to create their own STOs using TN through Token Now’s dApp.</li>
+                                <li>Will allow users to establish what kind of STO is being issued, debt or equity, its tokenomics, maturity, term, rights, yield to investors and/or any other source of income, among others.</li>
+                                <li>Will allow users to invest into existing STOs using any crypto as means of payment and allow them to create their own portfolio of STOs.Will facilitate the necessary KYC submissions and processes for promoters and investors, approve and reject, and whitelist investors to transfer STOs related tokens.</li>
+                                <li>KYC management and investor whitelisting is the key towards fully legal compliant STOs.</li>    
+                            </ul><br/>
+                            The dApp aims to connect the dots between the legal requirements (off-chain services to handle KYC and personal data) and the decentralized application, while facilitating the smart contract’s usage through a user-friendly interface.<br/>
+                            We will be providing the tools and mechanisms to convert the interactions between the dApp and the STOs into readable language. This fulfils the purposes of serving as auditable, legal evidence in any type of procedure or discovery.<br/>
+                            Given the simultaneous presence of off-chain and on-chain services in the platform, we aim to make the user interface both functional (MetaMask wallet) and easy to use. For this, we will use cloud infrastructure, which is highly scalable, secured by best-in-class security services and that can operate with no downtime.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line7" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The ecosystem<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line7_1">Security token offerings </h4>
+                                <p>Utilizing a decentralized platform presents two prominent challenges:</p>
+                                <ul style="list-style-type: number;">
+                                <li>
+                                    <h4 styles="color:blue">Technological:</h4><p>it connects the dApp’s back end which runs completely on a public blockchain through smart contracts. The smart contracts must be flawless to ensure the protection of issuers of tokens and their investors.</p>
+                                </li>
+                                <li> 
+                                    <h4 styles="color:blue">Legal/regulatory:</h4><p>the objective is to issue STOs in a compliant manner. Investors must also pass a KYC process to comply with regulatory and anti-money laundering regulations.</p>
+                                </li>
+                            </ul>
+                            <p>When dealing with standard securities, the ownership information of the investment product is recorded in a certificate which can take the form of a simple PDF. With a security token, the information is stored into an immutable blockchain and instead of a certificate being issued, a token is.</p>
+                            <p>All countries have very precise and extensive regulations in relation to what securities are, how they must be issued, who can participate, who can buy them, and what protection investors are afforded.</p>
+                            <p>The complexity of creating Token Now’s dApp lies in merging both the regulatory and legal issuance of securities and the technical aspect that allows the issuance of this type of financial instruments without Token Now acting as an intermediary. Furthermore, countries may have similar, but ultimately different legislation. This adds a layer of complexity as the regulatory compliance requirements in one country can greatly differ from another.</p>
+                            <p>Token Now aims to create a decentralized uniform protocol of security token issuance.</p>
+                            <p>The goal is for any issuer of security tokens to use Token Now’s technology, and for this issuer to:</p>
+                            <ul style="list-style-type: number;">
+                                <li>
+                                    Comply with local regulations.
+                                </li>
+                                <li>
+                                    Comply with the specifications of the issuance itself (the what).
+                                </li>
+                                <li>Comply with the process of how selling the security tokens may occur and by whom (the how).</li>
+                                <li>Slow legally compliant transfer of security tokens to occur in secondary markets (the where).</li>
+                            </ul>
+                            <p>Additionally, it is important to consider that while the biggest complexity lies in providing a solution that is compliant from a regulatory and technological point of view, the financial structure and tokenomics of the security token issuance must adhere to the end goal of the project.<br/>
+                                In this sense, the dApp must allow the issuer to establish what are the hard and the soft caps, what is the term or maturity of the loan in case of issuance of debt, or what is the shareholding allocation in the case of tokenized shares.
+                            </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line7_2">Security token smart contracts </h4>
+                                <p>Smart contracts will be utilized to create two entities: the ERC2011 TN utility token and an STO factory. The latter will deploy ERC20 dedicated STO tokens and escrow contracts for each STO that is issued through Token Now’s dApp.<br/>The TN token will be the utility token associated with the dApp platform. With it, promoters can issue their own STOs.
+                                    <br/>The TN utility token will be accessible via a pancakeswap pool12. Promoters will need to acquire TN to use the dApp. TN is then used when performing STO activities.</p>
+                                <p style="color:blue">Token Now aims to achieve the highest level of security, using audited libraries and smart contracts that follow the best practices to reduce attack vectors and possible exploits.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line7_3">The TN utility token</h4>
+                                <p>The TN utility token will have two fundamentally different and well-defined stages: the pre-issuance and the public sale.</p>
+                                <p style="color:blue">The objective of the pre-issuance stage is to allocate TN utility tokens to future STO issuers and different groups of people who trust in Token Now’s vision.</p>
+                                <p>At this stage, the TN utility token will be placed through an IEO and subsequently in a Pancakeswap pool, which will be pre-funded with USDC (a stablecoin) and TN to enhance possibilities of the dApp. <br/>
+                                    Token Now will need to fund the pool to establish a fixed starting price, since automated market makers, and in particular Pancakeswap, use the Constant Product Formula to establish the price based on TN/USDC pair funds deposited in the pool.<br/>
+                                    In essence, a Constant Product Formula is:
+                                </p><br/>
+                                <ul style="list-style-type: numver;">
+                                <li>x -> amount of TN present in the pool.</li>
+                                <li>y -> amount of USDC present in the pool.</li>
+                                <li>k = x*y -> where k is a constant (Constant Product Formula).</li>
+                                <li>This means the price of y will be = k/x.</li>
+                                <li>The price of x will be k/y at any time solely based on the funds present in the pool.</li>
+                                </ul>
+                                <p>Naturally, both x and y amounts (TN and USDC) must be funded. The amount to be supplied is determined by the target starting price.<br/>
+                                    The utility tokens ERC20 contract will implement several functional advantages such as:
+                                </p>
+                                <ul style="list-style: disc;">
+                                <li>Representation of voting powers depending on the pro-rata holding of TN.</li>
+                                <li>STO issuers will hold TN as collateral and there will be a system of rewards and penalties for issuers that fulfill the obligations established in their respective STO white papers. These rewards will come in the form of staking and slashing.</li>
+                                <li>Compliance with many Ethereum improvement proposals such as EIP712 and EIP165.</li>
+                                <li>Token Now will propose the creation of a DAO (Decentralized Autonomous Organization), which will govern decision making on matters such as protocol upgrades, allocation of social funds, and governance among others.</li>
+                                <li>Serve as a payment token to third parties belonging to Token Now’s Experts Ecosystem</li>
+                                </ul>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line8" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The STO factory<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_1">Bringing companies on-chain</h4>
+                                <p>Token Now’s vision is to onboard companies into Web3, so its dApp was built under this premise. The dApp allows companies to tokenize their existing shareholding, and transform its equity into tokens.<br/>
+                                    In a very lean format, companies can establish what their current equity is, who their shareholders are, and perform their first token issuance. This would allow any business to begin its journey into Web3. In such token issuance, the shareholders will receive tokens in the same value as the shares they possess, and transform the tokens into the digital twin of the existing equity. This process allows the migration of companies from offline entities, to online organisms belonging to a decentralized ecosystem.<br/>
+                                    Furthermore, by creating this frictionless process, and providing them a management solution that can solve their needs now that they have been digitized, companies can now exist on-chain, interact and operate in this environment, and coexist with native structures such as the DAOs.<br/>
+                                    It is in this starting point that DAOs can also be onboarded into Token Now’s dApp, since the tokenization process does not necessarily have to rely on the preexisting condition that shares or real world assets exist, as tokens can become the genesis for any project that is to be created natively in the blockchain.
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_2">Utility tokens</h4>
+                                <h5> The fundraising mechanism</h5>
+                                <p>
+                                    One of the main functionalities of the dApp is to use technology as a fundraising mechanism, which is enabled thanks to the escrow contract linked to the STO.<br/>
+                                    STOs dedicated token will be generated within an STO factory that will deploy an ERC20 token contract for each new tokenization.<br/>
+                                    This STO token will utilize whitelist access that will prohibit recipients from receiving tokens if they are not whitelisted, for example, if they did not pass the KYC process. These will only be tradable in secondary markets if the buyer has passed the KYC process and the issuer has accepted the request.<br/>
+                                    It is of utmost importance that the issuer of the security tokens controls the whole flow of security tokens from the primary to the secondary market, understanding and accepting which users can acquire security tokens.<br/>
+                                    This ensures compliance with the applicable legislation in relation to regulatory and anti money laundering (AML). Therefore, promoters or issuers of security tokens will always be responsible for the whitelisting of investors.<br/>
+                                    STO tokens will be acquired through an escrow contract specific to each tokenization. The escrow contract is a secure contract where investor capital is stored and protected by the smart contract. The smart contract is completely autonomous, independant and self-regulated. The escrow contract will only release the funds to the STO promoter when certain milestones have been reached:
+                                </p>
+                                <ul style="list-style-type: number;">
+                                <li>
+                                    <h4 style="color: blue;">Soft cap:</h4>the soft cap is the first milestone of any STO and it is the minimum amount needed for the STO to proceed. This amount will be included in the STO’s white paper and investors will know it beforehand
+                                    <ul style="list-style-type: circle;">
+                                    <li>When the soft cap is reached, the escrow account automatically releases the funds to the STO promoter and investors receive their tokens.</li>
+                                    <li>Any economic benefit derived from the tokens will start accruing from the moment the soft cap is reached.</li>
+                                    <li>If the soft cap is not reached within the time limits established by the white paper, the escrow account will automatically cancel the STO and return existing funds to the respective investors.</li>
+                                </ul>
+                                </li>
+                                <li>
+                                    <h4 style="color: blue;">Hard cap:</h4>the hard cap is the last milestone and it represents the total maximum amount of funds the STO promoter expects to raise. Once the hard cap is reached no additional tokens will be available in the primary issuance and the fundraising will be considered fully complete.
+                                    <ul style="list-style-type: circle;">
+                                    <li>The escrow account will release the remaining capital to the STO promoter and investors will receive their corresponding tokens.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4 style="color: blue;">Intermediate stages:</h4>the STO promoter could include one or more intermediate stages between soft and hard cap for its fundraising. These stages would need to be defined in the STO white paper and would work as milestones.
+                                </li>
+                                </ul>
+                                <p>Issuers will be able to call on the STO factory to deploy a new STO by using TN utility tokens and ETH for the transaction. Investors, once whitelisted, will be able to purchase the corresponding STO tokens in any crypto asset for a fixed STO selling price.<br/>
+                                    Whenever an investor participates in an STO, the capital will be stored in an escrow account.<br/>
+                                    The first release of the security tokens will be made once the soft cap has been reached. The issuer of tokens will decide before the release the tranches of tokens between the soft and hard cap.<br/>
+                                    As a safety mechanism, it is important to establish that if the soft cap of an STO is not met by the pre-established deadline, the capital already deposited into the escrow account will be reimbursed to investors.<br/>
+                                    As soon as the soft cap is reached, and the first tranche of tokens is released, these tokens will begin accruing income in the form of interests or dividends, and the issuer will be legally bound to meet obligations to investors.<br/>
+                                    The payments flowing from the issuer to investors will be deposited in the escrow contract by the issuer in any cryptocurrency and paid out to investors through the same escrow contract.<br/>Regarding the security of the STO factory, clones will be deployed through a minimal proxy pattern and the entire protocol will be upgradeable through a UUPS pattern.
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line9" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The Decentralized Management Solution<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_1">Capitalization table management</h4>
+                                <p>The capitalization table, mostly called “cap table”, presents a breakdown of every company’s ownership by stakeholder. It makes it simple to visualize who owns what, and it helps founders and investors in understanding the company’s capital structure.<br/>
+                                    Traditionally, the cap table is a legal document describing the company’s equity structure. Using blockchain technology, as the company’s equity is represented by security tokens, all the transactions are stored on the network, which makes it even harder to visualize the capitalization table.<br/>
+                                    Token Now uses the blockchain networks APIs to access data automatically in real-time, and thus, provides its users with cap table visualizations, making it more simple and time-efficient for companies to documentate the capitalization table.
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_2">Manage your capitalization table on-chain</h4>
+                                <p>In a tokenized company, every token holder is a shareholder. Since secondary market transactions can occur, or further issuances of tokens, the cap table can be constantly changing. Token Now provides a real time visualization of the cap table, to provide issuers with the necessary metrics and information to manage a company on-chain, allowing them to know at any time who their token holders are, how many tokens they are holding, and what is the valuation of their stakeholding.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                         <!-- end row -->
+                         <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_3">Monitor token holders profiles and transaction</h4>
+                                <p>Using Token Now’s dApp, issuers can connect each wallet address with an investor profile and monitor all the information and transactions that the tokenholder has performed.</p>
+                                <h5>1-Click to send dividends to the Token Holders</h5>
+                                <p>Token Now’s dApp allows issuers to send dividends to all the token holders in one-click from the company wallet connected.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                         <!-- end row -->
+                         <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_4">Whitelabel dApp for tokenized companies</h4>
+                                <p>Token Now’s decentralized protocol includes features to set up the branding and content of an optimized whitelabel dApp that provides Tokenizers with the tools needed to sell tokens, manage Token Offerings, and engage with their token holders</p>
+                                </div>
+                            <!-- end col -->
+                        </div>
+                         <!-- end row -->
+                         <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_3">Features applicable to DAOs</h4>
+                                <p>The features provided by Token Now’s dApp are applicable for DAOs, as the management solution embedded in the application itself is agnostic. As the vision of tokenization evolved, so did its approach on how to tackle the digital assets vertical, reason why it was understood since the inception that the dApp should cover different case scenarios and help bridge various realities now coexisting in an on-chain environment.</p>
+                               </div>
+                            <!-- end col -->
+                        </div>
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line10" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Tokenization<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Any asset or business can be broken down in fractional parts that retain the form of tokens, with equal rights and values, that can be purchased by anyone, anywhere, at any time.<br/>
+                                    Token Now offers a market leading, legally compliant, decentralized platform to perform STO’s and investment management, making a secure, transparent, convenient solution in which to raise funds through tokenization.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line11" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Architecture<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Token Now’s dApp architecture is modular, based on microservices that connect to each other to facilitate the usage, upgradeability, and maintenance of the protocol.<br/>
+                                <ul style="list-style-type: number;">
+                                <li>
+                                    <h4 style="color: blue;">FRONT-END</h4>The front-end will integrate MetaMask and an API service. The MetaMask integration is required to allow users to interact directly with the blockchain and protocol contracts, while the API service will handle KYC management, user logins, registrations, and general operations. The user has different views: he/she first has a smart contract wizard where the issuer user can deploy Security Tokens; once the company token is deployed and the smart contract is created, he/she will be able to access the dashboard where the company can be managed onchain, create pools, STOs, customize the launchpad for STOs, reviewanalytics around offerings, among others.
+                                </li>
+                                <li>
+                                    <h4 style="color: blue;">BACK-END:</h4>The back-end will consist of a set of lambdas functions that serve the dashboard app, but also expose the tokenization service without the need for a dashboard. For this, the transactions that are sent through an API integration will use Infura instead of MetaMask to send the transactions to the blockchain.
+                                </li>
+                                <li>
+                                    <h4 style="color: blue;">KYC SERVICE:</h4>The KYC service solution will connect to our existing Lambdas system. Acceptance and rejection of requests can be executed with the API or through the dashboard.
+                                </li>
+                                <li>
+                                    <h4 style="color: blue;">DATABASE:</h4>The database will store useful information for the functionality that Token Now proposes to build (users that might register their emails, metadata’s, transactions, etc.).
+                                </li>
+                                <li>
+                                    <h4 style="color: blue;">SMART CONTRACTS</h4>The smart contracts will be made up on the Binance Smart Chain, and a smart contract that serve as a factory for two other smart contracts;
+                                    <ul style="list-style-type:circle;">
+                                    <li>The escrow contract is where investors deposit money until the STO is finalized.</li>
+                                    <li>The ERC20 token contract will represent STO specific tokens. The escrow contract will also be the one that issuers use to deposit
+                                        the dividends/ interests that serves as revenue (yield) for the investors.</li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                </p>
+                            
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line12" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Additional challenges<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Achieving scalability and low-cost bases in public blockchain networks</h4>
+                                <p>Existing solutions must deal with the lack of scalability and costs associated with public blockchain networks such as the Ethereum mainnet. For this reason, the solution adopted in many cases is to use a private blockchain, renouncing decentralization as an objective.<br/>
+                                    Decentralization is a fundamental principle that governs Token Now’s existence, given the advancement of scalability and cost solutions, we are comfortable building on Ethereum’s mainnet.<br/>
+                                    To overcome this challenge, a solution is proposed based on the following flow:</p>
+                                    <ul style="list-style-type: number;">
+                                    <li>The issuer will buy TN from a Pancakeswap pool that Token Now will create during the public sale of the TN utility token.</li>
+                                    <li>Once the issuer receives TN utility tokens, the issuer can initiate a tokenization specifying the asset to be tokenized alongside the terms and conditions of the tokenization (purpose, place of issuance, financial terms, tokenomics, deadlines, etc.).</li>
+                                    <li>The result of this process will be two smart contracts: an STO token and an escrow contract. Used TN will be stacked in the escrow contract while the STO is running.</li>
+                                    <li>The issuer must establish what is the hard cap and soft cap, but also when the STO starts and when it ends.</li>
+                                    <li>Investors will be able to invest in STOs with any cryptocurrency. Investors’ money will be automatically converted to the stablecoin USDC. This is to avoid wide fluctuations of value in the short period of time that lasts between deposits being made to the finalization of the STO.</li>
+                                    <li>If the escrow reaches the soft or hard-cap the tokenization will be considered successful. The escrow will release the capital to the issuer and the security tokens to the investors. In a successful STO, the issuer will be able to withdraw the stake but if he decides to keep it staked it will be earning rewards over successful dividend payments. At the same time, bad issuers can have their stakes slashed if they don’t meet dividend payments.</li>
+                                    </ul>
+                                    <p>Investors will accrue interest and/or dividends on their acquired security tokens, thereafter, according to the terms and conditions of the STO, the issuer must deposit the accrued interests or dividends in the escrow contract. This objective will be achieved through the following flow:</p>
+                                    <h4>Technical approach to KYC implementation</h4>
+                                    <p>The next technological challenge is related to legal aspects. For any user to be able to invest in an asset tokenization, it is a legal requirement to successfully pass a KYC process. Token Now’s blockchain will comply with global data protection standards and applicable legislations, thus, cannot handle the personal data of users required for the on-chain KYC processes.<br/>
+                                        Therefore, Token Now will offer a hybrid solution where the KYC processes will be completed off-chain (outside the blockchain network); users are manually registered in a whitelist in the protocol’s smart contracts. Therefore, no personal data of the user is stored in the blockchain, but its registration will trigger whitelisting, and will pass through the blockchain using smart contracts to accept users who have previously passed their KYC successfully.<br/>
+                                        To overcome this challenge, a solution based on the following flow is proposed:
+                                    </p>
+                                    <ul style="list-style-type: number;">
+                                    <li>Issuers/Promoters send their KYC requests to Token Now. Token Now will have a white/blacklist to automatically resolve requests. Once resolved the issuer can now use the platform.</li>
+                                    <li>The issuer is now validated and can start accepting or rejecting requests from investors.</li>
+                                    <li>An unknown investor sends a KYC request to participate in an STO. Request is accepted/rejected by the issuer of that specific STO. A transaction is sent to the blockchain to whitelist the accepted investor in receiving STO tokens.</li>
+                                    <li>The investor is now a validated user. The investor wants now to transfer the STO’s token to an unknown buyer.</li>
+                                    <li>The unknown buyer submits a KYC request to the same issuer.</li>
+                                    <li>The unknown buyer has the KYC request accepted and it’s now whitelisted to receive the STO’s token.</li>
+                                    <li>The validated buyer receives the STO tokens.</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line13" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The dApp and TN<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="text-centre" id="line13_1">Overview</h3><br/>
+                                <h4 style="color: blue; " class="text-center">The Fuel</h4>
+                                <p>TN, Token Now’s utility token, fuels all the transactions made using the Token Now decentralized protocol:</p>
+                                <ul style="list-style-type: disc;">
+                                <li>Payment of the protocol’s issuance fee</li>
+                                <li>One of the payments methods for investing in Token Offerings</li>
+                                <li>The payment method for liquidating any service provided by an Expert from Token Now’s ecosystem.</li>
+                                </ul><br/>
+                                <h4 style="color: blue;" class="text-center">The Engine</h4>
+                                <p>A decentralized protocol capable of tokenizing equity providing companies that are migrating to web3 with easy-to-use tools to issue the security/equity token, launch and manage token offerings to raise funds, and manage the capitalization table and investor relations. All compliant, transparent, and traceable on the Ethereum network. Moreover, the decentralized protocol provides to Decentralized Autonomous Organizations (DAO), and tokenized companies adopting the model, compliant governance features to run and manage voting proposals on-chain.</p><br/>
+                                <h4 style="color: blue;" class="text-center">The Ecosystem</h4>
+                                <p>Token Now’s decentralized protocol creates an on-chain ecosystem of Tokenizers (companies tokenizing equity/asset), Investors (individual/institutional), Experts (individual/entity) who are trained and certified by the Token Now Academy to help the Tokenizers to succeed in their tokenizations.</p><br/>
+                                <h4 style="color: blue;" class="text-center">The Vision</h4>
+                                <p>Token Now’s vision is to become the infrastructure for companies to tokenize their equity and migrate into a Web3 environment, and create the ecosystem where different economic agents coexist around the TN token.</p>
+                                
+                                <h3 class="text-centre"id="line13_2">Features for Issuers</h3><br/>
+                                <h4 style="color: blue;" class="text-center">Token Issuance</h4>
+                                <p>Issue equity/security token’s smart contract in a matter of a few clicks.</p><br/>
+                                <h4 style="color: blue;" class="text-center">Token Offering Management</h4>
+                                <p>Whitelabel Token Sales dApp with easy to use features to launch and manage Equity/Security Token Offerings.</p><br/>
+                                <h4 style="color: blue;" class="text-center">Capitalization Table and Investors Management</h4>
+                                <p>Manage the capitalization table of tokenized companies on-chain.</p><br/>
+                                <h4 style="color: blue;" class="text-center">Governance Features</h4>
+                                <p> Launch and manage compliant voting proposals.</p><br/>
+                                <h4 style="color: blue;" class="text-center">KYC Management</h4>
+                                <p>Receive and manage the KYC requests from investors.</p>
+                                <h4 style="color: blue;" class="text-center">Experts Ecosystem</h4>
+                                <p>Hire individuals and/or entities in the different fields who are trained and certified by the Token Now’s Tokenization Academy.</p><br/>
+                                
+                                <h3 class="text-centre" id="line13_3">Features for Investors</h3><br/>
+                                <h4 style="color: blue;" class="text-center">Invest in tokenized companies</h4>
+                                <p>Token Now provides tokenized companies with a whitelabel decentralized application that presents to investors all the information needed for the due diligence process.</p><br/>
+                                <h4 style="color: blue;" class="text-center">Fiat/Crypto Payments</h4>
+                                <p>Token Now’s decentralized protocol is integrated with partners’ solutions to provide investors in tokenized companies with the freedom to choose their preferred investment method.</p>
+                                <h4 style="color: blue;" class="text-center">Governance System</h4>
+                                <b>Token Now has <b>a governance system allowing the investors of tokenized companies to earn voting rights based on the amount of tokens held, and engage in the decision-making process.</b></p><br/>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line14" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">The Tokenization Process<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                            <p>
+                                In order for issuers to initiate a process, to access the STO factory, and to be able to use the dApp, the user will need to settle a fixed amount of TN utility tokens into the protocol. To initiate an STO process, $5,000 on TNs will need to be purchased and deposited in the escrow account. In addition, STO issuers will have to deposit a specific percentage of the funds raised as collateral to value the TN in its ecosystem.<br/>
+                                <b>It is important to establish that investors in STOs do not have to possess TN to interact with the dApp or to be able to invest. Incentive mechanisms can be created to further link the TN utility token with the STO being issued.</b>
+                            </p><br/>
+                            <h3 id="line14_1">Monetization</h3>
+                            <p>Token Now will monetize the dApp through two paths: i) Business to Business (B2B) and ii) Business to Consumer (B2C).</p><br/>
+                            <h3 id="line14_2">B2B – Issuers</h3>
+                            <p>Token Now’s monetization from issuers in a B2B model comes from:
+                                <ul style="list-style-type: number;">
+                                <li><h4>Tokenization fee:</h4>Consist of a one-time payment made by the issuer that wishes to bring the company on chain, it would be a fixed amount of 5000$, this payment must be done on TN at the current price of the market. This fee will automatically be transferred to a Token Now Ethereum address every time a tokenization is launched by the protocol.</li>
+                                <li><h4>Success fee:</h4>consists of a one-off success fee of [3.00%] which is charged exclusively if the STO’s soft cap is reached, and calculated on the total amount raised after that. This fee will automatically be transferred to Token Now’s Ethereum address every time the deposited funds in the escrow contract are distributed to the issuer.</li>
+                                <li><h4>Experts fee:</h4>consist of a one time match fee that the escrow run by the smart contract would deduce from the expert honoraries for providing the services required by the issuer, this amount would be changing depending on the number of services provided by the expert.</li> 
+                                </ul>
+                            </p><br/>
+                            <h3 id="line14_3">B2C – Investors</h3>
+                            <p>Token Now’s monetization from investors in a B2C model arises from transactions investors engage in secondary markets. It is important to state that investors buying security tokens at their issuance do not have to pay any fees to Token Now.
+                                <br/>
+                                <ul style="list-style-type: number;">
+                                <li><h4>Transaction fee:</h4>every time an investor in an STO sells their security tokens to a third party, inside Token Now’s platform, in a peer-to-peer manner, or in third party centralized or decentralized application, Token Now will obtain a fixed transaction fee of [0.2%] per trade. In the future Token Now may add incentives such as discount fees and volume-based tiering; Token Now will not charge more than [0.2%] for secondary transactions.</li>
+                                <li><h4>Fiat gateway Fee:</h4>every time an investor buys cryptocurrency using our fiat gateway inside the platform, Token Now will earn a fee of 1.5% of the amount per transaction.</li>
+                                </ul>
+                            </p><br/>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line15" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Token Economy<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                            <h3 id="line15_1">Initial Coin Distribution</h3>
+                           <p>The issuance will have an initial limit of TN [150,000,000].<br/>
+                            Of this amount, the liquidity pool which will be created will be made by depositing 12,000,000 (8%) into the Pancakeswap pool to ensure the stability of the token; the pool will be funded with USDC. USDC is a stablecoin and it will come from a liquidity vault created from the value generated by the protocol from its business model.<br/>
+                            The initial open price will be set by the relation between the 12.000.000 TN coming from tokenization fee and the amount of money raised by all the companies brought on chain by the protocol. This implies that the price ratio is going to be determined by the added value that the protocol brings to the ecosystem at the time of closing the 12.000.000 TN.<br/>
+                            Pancakeswap is an automated liquidity protocol powered by a Constant Product Formula and implemented in a system of non-upgradeable smart contracts on the Ethereum blockchain. This removes the need for trusted
+                            intermediaries, prioritizing decentralization, censorship-resistance, and security. Pancakeswap is open-source software licensed under the GPL.<br/>
+                            After the funding of the liquidity pool a percentage of the liquidity vault would be used to fund proposals on the Token Now DAO adding more stakeholders to the equation and allowing the protocol to grow in a decentralized way.
+                        </p>
+                            <h3 id="line15_2">Social and DAO</h3>
+                            <p>Tokenization will change the world as we know it. One of the main considerations of STOs is to allow smaller, less fortunate individuals and businesses, to access capital markets in a less restricted approach. For instance, certain undeveloped countries may lack the appropriate financial infrastructure to gain access to funding, or countries with questionable governments may suffer from corruption or other nation state related risks that may result in investors rejecting investment propositions from these countries.<br/>
+                                To enable individuals and businesses to have the same access to capital markets as other more developed countries, Token Now is considering allocating a share of its profits to allow smaller individuals and businesses to obtain a discount on the cost of tokenization.<br/>
+                                As mentioned, Token Now intends to develop a DAO. The purpose of the DAO will be to provide community members with decisional powers on protocol upgrades. For example, to incentivise the allocation of social funds to fund STOs which are governed by ESG parameters, general governance, and protocol upgrades.<br/>
+                                The goal is to be as decentralized as possible with a major emphasis on involving the community, which will be crucial to the success of the project.<br/>
+                                <h4>Incentivising the self-sustainability of the ecosystem by the use of TN as the vehicle of investment.</h4>
+                                It is Token Now’s purpose to design and develop a self-regulated STO ecosystem. We acknowledge that certain limitations arise from full decentralization. Among others, it is possible that certain STO issuers intentionally try to misuse the ecosystem itself. Such decentralization makes it difficult to actually control who can and cannot access the ecosystem. As a result, Token Now will develop an embedded system that will carry out certain actions automatically and autonomously to safeguard investors’ interests.<br/>
+                                STOs will have a collateral mechanism by which the TN received by issuers carrying a tokenization from investors will be deposited in the escrow account taking the shape of stake. The escrow account will mint or slash the rewards which will be added or withdrawn to the balance of TN Depending on the amount of TN received and the behavior of the issuer.
+                                <br/>
+                                <b>The STO factory will incorporate a reward/penalty system by which Good Actors will receive staking in the form of TN that could be sold or used to deploy additional STOs or services payable in TN. On the other hand, Bad Actors will be penalized seeing their TN deposits slashed and will be included on a Blacklist.</b><br/>
+                            </p><br/>
+                            <h3 id="line15_3">Allocation</h3>
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Allocation %</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Allocation TN</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" >Dex Listing, Future CEX listing and liquidit</th>
+                                        <td colspan="2">20</td>
+                                        <td>25.000.000</td>
+                                      </tr>
+                                  <tr>
+                                    <th scope="row">Advisors and Pre seeds</th>
+                                    <td colspan="2">10</td>
+                                    <td>40.000.000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" style="color:blue">Team</th>
+                                    <td colspan="2">10</td>
+                                    <td>25.000.000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" style="color:blue">Seeds</th>
+                                    <td colspan="2">5</td>
+                                    <td>12.000.000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" style="color:blue">Development</th>
+                                    <td colspan="2">20</td>
+                                    <td>2.500.000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" style="color:blue">Dao</th>
+                                    <td colspan="2">25</td>
+                                    <td>1.500.000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" style="color:blue">Community</th>
+                                    <td colspan="2">5</td>
+                                    <td>25.000.000</td>
+                                  </tr> 
+                                  <tr>
+                                    <th scope="row" style="color:blue">Swapping</th>
+                                    <td colspan="2">5</td>
+                                    <td>8.000.000</td>
+                                  </tr> 
+                                  <tr>
+                                    <th scope="row" style="color:blue">Emergency Funds</th>
+                                    <td colspan="2">5</td>
+                                    <td>8.000.000</td>
+                                  </tr> 
+                                  <tr>
+                                    <th scope="row" >Total</th>
+                                    <td colspan="2">100</td>
+                                    <td>150.000.000</td>
+                                  </tr> 
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                     <!-- end section -->
+
+                     <section id="line16" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Team<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                            <h3 id="line16_1">The Token Now Team</h3>
+                            <h3 class="text-center bold">Arslan Naseem</h3>
+                            <h4 class="text-center bold">CEO</h4>
+                           <p>Serial entrepreneur & blockchain enthusiast. Academic Director, lecturer in universities and business schools, and advisor for startups in the web3 ecosystem. Keynote speaker.</p><br/>
+                           <h3 class="text-center bold">Muhammad Waqas</h3>
+                            <h4 class="text-center bold">CTO</h4>
+                            <p>5 years working on the blockchain ecosystem managing tech teams, teaching web 3 technology and how it can be implemented in real use case scenarios. Working in solutions across many Blockchain-based technology endeavors exchange mechanisms such as trading, arbitrage, OTC operations, 2-layer solutions and custody.</p>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                     <section id="line17" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">References<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul style="list-style-type: number;">
+                                <li>Subprime Financial Crisis:<a target="_blank" href=":https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008">https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008</a></li>
+                                <li>Satoshi Nakamoto <a target="_blank" href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto">https://en.wikipedia.org/wiki/Satoshi_Nakamoto</a></li>
+                                <!-- <li>Smart Contracts:<a  target="_blank" href="https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html">https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html</a></li> -->
+                                <li>ICO: <a target="_blank" href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-16">https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-16 </a></li>
+                                <li>SEC:<a target="_blank" href="https://www.investopedia.com/terms/s/sec.asp">https://www.investopedia.com/terms/s/sec.asp</a></li>
+                                <li>Howey Analysis:<a target="_blank" href="https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets">https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets</a></li>
+                                <li>Securities Act 33’:<a target="_blank" href="https://www.investopedia.com/terms/s/securitiesact1933.asp">https://www.investopedia.com/terms/s/securitiesact1933.asp</a></li>
+                                <li>Securities Exchange Act 34’:<a target="_blank" href="https://www.investopedia.com/terms/s/seact1934.asp">https://www.investopedia.com/terms/s/seact1934.asp</a></li>
+                                <li>Abridged Deloitte Article:<a target="_blank" href="https://www.wyoleg.gov/InterimCommittee/2019/S3-20190506TokenizationArticle.pdf">https://www.wyoleg.gov/InterimCommittee/2019/S3-20190506TokenizationArticle.pdf</a></li>
+                                <li>WEF:<a target="_blank" href="https://www3.weforum.org/docs/WEF_Responsible_Digital_Transformation.pdf">https://www3.weforum.org/docs/WEF_Responsible_Digital_Transformation.pdf</a></li>
+                                <li>ERC20:<a target="_blank" href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">https://ethereum.org/en/developers/docs/standards/tokens/erc-20/</a></li>
+                                <li>DAO: <a target="_blank" href="https://en.wikipedia.org/wiki/Decentralized_autonomous_organization">https://en.wikipedia.org/wiki/Decentralized_autonomous_organization</a></li>
+                                <li>SAFT:<a target="_blank" href="https://www.investopedia.com/terms/s/simple-agreement-future-tokens-saft.asp">https://www.investopedia.com/terms/s/simple-agreement-future-tokens-saft.asp</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>
